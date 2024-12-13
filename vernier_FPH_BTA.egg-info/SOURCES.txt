@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+vernier_FPH_BTA.egg-info/PKG-INFO
+vernier_FPH_BTA.egg-info/SOURCES.txt
+vernier_FPH_BTA.egg-info/dependency_links.txt
+vernier_FPH_BTA.egg-info/entry_points.txt
+vernier_FPH_BTA.egg-info/requires.txt
+vernier_FPH_BTA.egg-info/top_level.txt
+vernier_fph_bta/TEST_PLUGIN.py
+vernier_fph_bta/__init__.py
+vernier_fph_bta/vernier_fph_bta.py
