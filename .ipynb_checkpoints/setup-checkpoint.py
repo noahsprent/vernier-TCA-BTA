@@ -13,7 +13,7 @@ setup(
     url="https://github.com/noahsprent",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["serial", "click", "pioreactor>24.10.0"],
+    install_requires=["serial", "json", "pioreactor>=24.10.0", "click", "time"], # PROVIDE OTHER PYTHON REQUIREMENTS, ex: "pioreactor>=23.6.0", "numpy>=1.0"
     entry_points={
         "pioreactor.plugins": "vernier_fph_bta = vernier_fph_bta"
     },
