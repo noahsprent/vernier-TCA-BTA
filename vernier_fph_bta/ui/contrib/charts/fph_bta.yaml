@@ -12,4 +12,4 @@ y_axis_domain: [0,14] # (Optional) specify a starting y-axis domain. Must be an 
 y_transformation: # (Optional) an inline JS function to transform the y data. Default is the identity function, string.
 lookback: 10000 # Not described in docs
 fixed_decimals: 1 # How many decimals to display, integer.
-down_sample: 0 # (Optional) A boolean to down-sample the data points from the server or not.
+down_sample: false # (Optional) A boolean to down-sample the data points from the server or not.

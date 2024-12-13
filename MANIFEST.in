@@ -1,6 +1,4 @@
-# recursive-include <PLUGIN_NAME>/ui/ *.yaml
-# include <PLUGIN_NAME>/additional_config.ini
-# include <PLUGIN_NAME>/additional_sql.sql
-# include <PLUGIN_NAME>/post_install.sh
-# include <PLUGIN_NAME>/pre_uninstall.sh
+recursive-include vernier_fph_bta/ui/ *.yaml
+include vernier_fph_bta/additional_config.ini
+include vernier_fph_bta/additional_sql.sql
 # include <PLUGIN_NAME>/LEADER_ONLY

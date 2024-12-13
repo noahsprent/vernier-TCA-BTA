@@ -48,10 +48,10 @@ class ReadPh(BackgroundJob):
 
     job_name="vernier_fph_bta"
     published_settings = {
-        "serial_value": {"datatype": "float", "settable": False},
+        "ph_reading": {"datatype": "float", "settable": False},
         "pin": {"datatype": "string", "settable": True},
-        "slope": {"datatype": "float", "settable": False},
-        "intercept": {"datatype": "float", "settable": False},
+        "slope": {"datatype": "float", "settable": True},
+        "intercept": {"datatype": "float", "settable": True},
     }
 
     def __init__(self, unit, experiment, **kwargs):
@@ -59,7 +59,7 @@ class ReadPh(BackgroundJob):
         time_between_readings = 4 
         assert time_between_readings >= 2.0
 
-        self.pin = "A0"
+        self.pin = "A2"
         self.slope = -7.78
         self.intercept = 16.34
         
@@ -95,7 +95,7 @@ def click_read_ph():
 
     unit = get_unit_name()
     experiment = get_assigned_experiment_name(unit)
-    job = ReadSerial(
+    job = ReadPh(
         unit=unit,
         experiment=experiment,
         )

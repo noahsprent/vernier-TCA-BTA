@@ -1,3 +1,0 @@
-serial
-click
-pioreactor>24.10.0
