@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="vernier-FPH-BTA",
-    version="0.0.4",
+    version="0.1.0",
     license_files = ('LICENSE.txt',),
     description="The plugin allows you to read pH into the pioreactor app using the Vernier FPH-BTA sensor.",
     long_description=open("README.md").read(),
