@@ -1,6 +1,6 @@
 ## Pioreactor Vernier FPH-BTA Plugin
 
-The plugin allows you to read pH into the pioreactor app using the Vernier FPH-BTA sensor.
+The plugin allows you to read temperature into the pioreactor app using the Vernier TMP-BTA sensor.
 
 This plugin assumes that a JSON is being received by the RPI via serial, and that the JSON has keys A0-A5 representing voltages read by Arduino pins. Alternatively one might use some kind of ADC that can use 5V power to supply the sensor but still transmit over I2C at 3.3V etc., but in my case the arduino was the simplest option.
 
@@ -15,11 +15,11 @@ Then you need arduino code to write the json to serial etc.
 Install from the Pioreactor plugins web interface or the command line:
 
 ```
-pio install-plugin vernier-FPH-BTA # to install directly on the Pioreactor
+pio install-plugin vernier-TMP-BTA # to install directly on the Pioreactor
 
 # OR, on the leader's command line:
 
-pios install-plugin vernier-FPH-BTA # to install on all Pioreactors in a cluster
+pios install-plugin vernier-TMP-BTA # to install on all Pioreactors in a cluster
 ```
 
 Or install through the web interface (_Plugins_ tab). This will install the plugin on all Pioreactors within the cluster.
@@ -28,12 +28,12 @@ Or install through the web interface (_Plugins_ tab). This will install the plug
 
 #### Through the command line:
 ```
-pio run vernier_fph_bta
+pio run vernier_tmp_bta
 ```
 
 #### Through the UI:
 
-Under _Manage_, there will be a new _Activities_ option called _vernier_fph_bta_. Editable settings include the pin that's being read and the slope and intercept for calibration. 
+Under _Manage_, there will be a new _Activities_ option called _vernier_tmp_bta_. Editable settings include the pin that's being read and the slope and intercept for calibration. 
 
 ## Plugin documentation
 

@@ -1,0 +1,11 @@
+dataset_name: temp_readings
+default_order_by: timestamp # for example
+description: Temperature readings from TMP-BTA Vernier sensor
+display_name: Temp Readings
+has_experiment: true # does your SQL table have an experiment column.?
+has_unit: true # does your SQL table have an pioreactor_unit column.?
+source: vernier_tmp_bta
+table: temp_readings # see also query below
+timestamp_columns:
+- timestamp
+always_partition_by_unit: false
